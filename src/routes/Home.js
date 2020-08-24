@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import Movie from "./components/Movie";
+import Movie from "../components/Movie";
 import "./Home.css";
 
 class Home extends React.Component {
@@ -8,7 +8,6 @@ class Home extends React.Component {
         isLoading: true,
         movies: [],
     };
-
     getMovies = async () => {
         const {
             data: {
@@ -19,7 +18,6 @@ class Home extends React.Component {
         );
         this.setState({ movies, isLoading: false });
     };
-
     componentDidMount() {
         this.getMovies();
     }
