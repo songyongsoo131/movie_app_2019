@@ -6,8 +6,8 @@ function About(props) {
 
     return (
         <div className="about__container">
-            <span>"ABC"</span>
-            <span>- Mr. abc, 2020</span>
+            <span>"Hello Hello Hello"</span>
+            <span>- Yongsoo Song, 2020</span>
         </div>
     );
 }
